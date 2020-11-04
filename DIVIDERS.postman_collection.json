@@ -1,0 +1,50 @@
+{
+	"info": {
+		"_postman_id": "2e5aed49-400c-4930-8e83-8a1b35b63513",
+		"name": "DIVIDERS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "PUT_CONFIGURATION",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Animals\": {\r\n        \"1\":\"Cat\",\r\n        \"2\":\"Dog\"\r\n    },\r\n    \"Furnitures\": {\r\n        \"1\":\"Table\",\r\n        \"2\":\"Chair\"\r\n    }\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/divisors/configuration",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"divisors",
+						"configuration"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET_DIVISORS_MAPPING",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
